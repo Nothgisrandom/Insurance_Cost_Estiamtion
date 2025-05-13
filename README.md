@@ -29,6 +29,9 @@ It also segments individuals into cost groups to help insurers optimize premium 
 
 ---
 
+## Data Visualizations & Exploration
+https://github.com/Nothgisrandom/Insurance_Cost_Estiamtion/blob/main/charges_distribution.png 
+
 ##  Key Insights
 
 - **Charges are heavily skewed to the right**, with a small group of individuals incurring very high costs.
@@ -76,6 +79,7 @@ It also segments individuals into cost groups to help insurers optimize premium 
 
 
 ##  File Structure
+- EDA data visulizations and images. 
 - https://github.com/Nothgisrandom/Insurance_Cost_Estiamtion/blob/main/Insurance_EDA_with_Saved_Images.ipynb 
 - `README.md`: Project summary and insights
 
