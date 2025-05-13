@@ -68,7 +68,12 @@ It also segments individuals into cost groups to help insurers optimize premium 
 
 -  The fitted coefficient shows the mean cost for the region variables if all other variables are at their mean value in the dataset.
 -  This helps compare the group means. Southern regions have a lower average cost compared to northern ones.
+
 ---
+
+### MLM Evaluation Metrics :### 
+- Interpretation The multiple linear model explains 78% of the variability in health care costs based on the insured's demographic data. 
+
 
 ##  File Structure
 - `Revised_Insurance_EDA_Notebook.ipynb`: Cleaned-up version with additional EDA visuals
