@@ -35,6 +35,9 @@ It also segments individuals into cost groups to help insurers optimize premium 
 
 ![Charges Distribution](Charges_Vs_Age_Region.png)
 
+![Charges Distribution](charges_by_smoker.png)
+
+![Charges Distribution](Charges_Age_by_Smoker.png)
 
 ##  Key Insights
 
