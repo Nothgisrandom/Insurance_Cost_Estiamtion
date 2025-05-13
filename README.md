@@ -42,7 +42,7 @@ It also segments individuals into cost groups to help insurers optimize premium 
 
 - **smoker_yes:** 	increases the cost by 11.5 thousand dollars compared to non-smokers.	
 
- - **BMI:** For each additional unit in BMI, the cost increases $316, if all other variables are held fixed.
+ - **BMI:** For each additional unit in BMI, the cost increases $316 if all other variables are held fixed.
 
 - **Children:** For each additional child in the family, the cost increases by $528 if all other variables are fixed.
 
@@ -54,6 +54,7 @@ It also segments individuals into cost groups to help insurers optimize premium 
 
 ##  File Structure
 - `Revised_Insurance_EDA_Notebook.ipynb`: Cleaned-up version with additional EDA visuals
+- https://github.com/Nothgisrandom/Insurance_Cost_Estiamtion/blob/main/Insurance_EDA_with_Saved_Images.ipynb 
 - `README.md`: Project summary and insights
 
 ---
