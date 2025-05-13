@@ -76,7 +76,6 @@ It also segments individuals into cost groups to help insurers optimize premium 
 
 
 ##  File Structure
-- `Revised_Insurance_EDA_Notebook.ipynb`: Cleaned-up version with additional EDA visuals
 - https://github.com/Nothgisrandom/Insurance_Cost_Estiamtion/blob/main/Insurance_EDA_with_Saved_Images.ipynb 
 - `README.md`: Project summary and insights
 
