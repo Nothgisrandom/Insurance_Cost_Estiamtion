@@ -33,6 +33,8 @@ It also segments individuals into cost groups to help insurers optimize premium 
 
 ![Image](https://github.com/Nothgisrandom/AIML/blob/main/MissingData.png](https://github.com/Nothgisrandom/Insurance_Cost_Estiamtion/blob/main/charges_distribution.png)
 
+![Charges Distribution](https://github.com/Nothgisrandom/Insurance_Cost_Estiamtion/blob/main/charges_distribution.png?raw=true)
+
 ##  Key Insights
 
 - **Charges are heavily skewed to the right**, with a small group of individuals incurring very high costs.
