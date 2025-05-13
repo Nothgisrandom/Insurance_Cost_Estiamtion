@@ -54,7 +54,7 @@ It also segments individuals into cost groups to help insurers optimize premium 
 | 6     | sex_male             | N/A                 | -9.295846              | -9.295846                   |
 | 5     | sex_female           | N/A                 | 9.295846               | 9.295846                    |
  
-### Interpretation of the fitted coefficients:### 
+### Interpretation of the fitted coefficients
 
 - **y-intercept:**  The expected cost of health care is approximately 20K when all the input features are at their mean values in the dataset.
 
@@ -71,7 +71,7 @@ It also segments individuals into cost groups to help insurers optimize premium 
 
 ---
 
-### MLM Evaluation Metrics :### 
+### MLM Evaluation Metrics
 - Interpretation The multiple linear model explains 78% of the variability in health care costs based on the insured's demographic data. 
 
 
