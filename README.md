@@ -31,7 +31,7 @@ It also segments individuals into cost groups to help insurers optimize premium 
 
 ## Data Visualizations & Exploration
 
-![Image]([https://github.com/Nothgisrandom/AIML/blob/main/MissingData.png](https://github.com/Nothgisrandom/Insurance_Cost_Estiamtion/blob/main/charges_distribution.png])
+![Image][https://github.com/Nothgisrandom/AIML/blob/main/MissingData.png](https://github.com/Nothgisrandom/Insurance_Cost_Estiamtion/blob/main/charges_distribution.png]
 
 ##  Key Insights
 
