@@ -23,8 +23,8 @@ It also segments individuals into cost groups to help insurers optimize premium 
 ## 🔍 Techniques Used
 
 - **Exploratory Data Analysis (EDA)**: Histograms, box plots, and correlation heatmaps
+- **Predictive Modeling**: Linear Regression
 - **Clustering**: KMeans (planned)
-- **Predictive Modeling**: Linear Regression, Random Forest (planned)
 
 ---
 
