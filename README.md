@@ -68,16 +68,16 @@ It also segments individuals into cost groups to help insurers optimize premium 
 
 - **y-intercept:**  The expected cost of health care is approximately 20K when all the input features are at their mean values in the dataset.
 
-- **smoker_yes:** 	increases the cost by 11.5 thousand dollars compared to non-smokers.	
+- **smoker_yes:** 	increases the cost by 11.8 thousand dollars compared to non-smokers.	
 
- - **BMI:** For each additional unit in BMI, the cost increases $316 if all other variables are held fixed.
+ - **BMI:** For each additional unit in BMI, the cost increases $333.9 if all other variables are held fixed.
 
-- **Children:** For each additional child in the family, the cost increases by $528 if all other variables are fixed.
+- **Children:** For each additional child in the family, the cost increases by $428.78 if all other variables are fixed.
 
-- **Sex_female:** For females, the cost increases by 51 dollars compared to males with the same age, BMI, etc.
+- **Sex_female:** For females, the cost increases by 9.30 dollars compared to males with the same age, BMI, etc.
 
 -  The fitted coefficient shows the mean cost for the region variables if all other variables are at their mean value in the dataset.
--  This helps compare the group means. Southern regions have a lower average cost compared to northern ones.
+-  This helps compare the group means across different regions. Southern regions have a lower average cost compared to northern ones.
 
 ---
 
