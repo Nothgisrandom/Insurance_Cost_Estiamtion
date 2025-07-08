@@ -108,8 +108,7 @@ It also segments individuals into cost groups to help insurers optimize premium 
 - **Classification Models**: SVM, Random Forest, and Dummy Classifier were trained to predict `charge_category`  
 - **Class Imbalance Handling**: Applied SMOTE (Synthetic Minority Oversampling Technique) to improve model fairness  
 - **Model Evaluation**: Confusion matrices, macro-averaged classification reports, and performance bar plots for F1, precision, recall, and accuracy  
-- **Model Interpretability**:
-  - Feature importance via Random Forest
+- **Model Interpretability**: Feature importance via Random Forest
 
 ---
 
@@ -142,14 +141,14 @@ It also segments individuals into cost groups to help insurers optimize premium 
   ```
 ---
 
-## New Visuals
+## Classification Models Visuals
+- Confusion matrix heatmaps for each classifier
+ ![](Confusion_Matrix.png)
 
 - Classification Metric Comparison Chart
 ![metric comparison](https://github.com/Nothgisrandom/Insurance_Cost_Estiamtion/blob/main/classification%20metric%20comparison.png)
 - Bar chart of feature importances from Random Forest
 -![Feature Importance](https://github.com/Nothgisrandom/Insurance_Cost_Estiamtion/blob/main/Feature%20Importance%20from%20Random%20Forest.png)
-- Confusion matrix heatmaps for each classifier
- ![](Confusion_Matrix.png)
 
 
 ---
