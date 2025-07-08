@@ -17,6 +17,7 @@ It also segments individuals into cost groups to help insurers optimize premium 
 - `smoker`: Smoking status  
 - `region`: U.S. residential area  
 - `charges`: Individual medical costs (target variable)
+- `charge_category`: Categorical variable derived from charges using 5-number summary
 
 ---
 
@@ -66,15 +67,15 @@ It also segments individuals into cost groups to help insurers optimize premium 
  
 ### Interpretation of the fitted coefficients
 
-- **y-intercept:**  The expected cost of health care is approximately 20K when all the input features are at their mean values in the dataset.
+- **y-intercept:**  The expected cost of healthcare is approximately $ 20,000 when all input features are at their mean values in the dataset.
 
 - **smoker_yes:** 	increases the cost by 11.8 thousand dollars compared to non-smokers.	
 
- - **BMI:** For each additional unit in BMI, the cost increases $333.9 if all other variables are held fixed.
+ - **BMI:** For each additional unit in BMI, the cost increases by $ 333.90 if all other variables are held constant.
 
-- **Children:** For each additional child in the family, the cost increases by $428.78 if all other variables are fixed.
+- **Children:** For each additional child in the family, the cost increases by $428.78, assuming all other variables remain constant.
 
-- **Sex_female:** For females, the cost increases by 9.30 dollars compared to males with the same age, BMI, etc.
+- **Sex_female:** For females, the cost increases by $ 9.30 compared to males of the same age, BMI, etc.
 
 -  The fitted coefficient shows the mean cost for the region variables if all other variables are at their mean value in the dataset.
 -  This helps compare the group means across different regions. Southern regions have a lower average cost compared to northern ones.
@@ -82,7 +83,7 @@ It also segments individuals into cost groups to help insurers optimize premium 
 ---
 
 ### MLM Evaluation Metrics
-- Interpretation The multiple linear model explains 78% of the variability in health care costs based on the insured's demographic data. 
+- Interpretation: The multiple linear model explains 78% of the variability in healthcare costs based on the insured's demographic data. 
 
 
 ##  File Structure
@@ -92,8 +93,63 @@ It also segments individuals into cost groups to help insurers optimize premium 
 
 ---
 
-##  Next Steps
+##  Model Enhancements:
+- `charge_category`: Categorical variable derived from charges using 5-number summary
 
+---
+
+## Techniques Used
+
+- **Exploratory Data Analysis (EDA)**: Histograms, box plots, correlation heatmaps, bivariate exploration via scatter plots and side-by-side box plots.  
+- **Regression Modeling**: Multiple Linear Regression and Random Forest Regressor  
+- **Risk Group Segmentation**: Charges were categorized into bins using the 5-number summary:
+  - Very Low (≤ $4,740), Low ($4,740–$9,382), Medium ($9,382–$16,640), High (>$16,640)
+- **Classification Models**: SVM, Random Forest, and Dummy Classifier were trained to predict `charge_category`  
+- **Class Imbalance Handling**: Applied SMOTE (Synthetic Minority Oversampling Technique) to improve model fairness  
+- **Model Evaluation**: Confusion matrices, macro-averaged classification reports, and performance bar plots for F1, precision, recall, and accuracy  
+- **Model Interpretability**:
+  - Feature importance via Random Forest
+  - SHAP value recommendations (to be run locally)
+  - Partial dependence plot support for deeper insight (optional)
+
+---
+
+## Updated Insights
+
+- **Random Forest Feature Importance (Charges Prediction)**:
+  1. **Smoker** (most important)
+  2. **BMI**
+  3. **Age**
+  4. Children, Region, and Sex (minor contributors)
+
+- **Model Comparison (Charge Category Classification)**:
+  - Best overall performance from **Random Forest** with SMOTE balancing
+  - **Smoker status** is a dominant predictor for classification and regression alike
+  - Models were evaluated using **confusion matrices** and **macro F1-score comparisons**
+
+- **Risk Category Distribution** (based on 5-number summary bins):
+  ```
+  Very Low      (~1122–4740):    ███████████████████████
+  Low           (~4740–9382):    █████████████████
+  Medium        (~9382–16640):   ████
+  High          (>16640):        ████
+  ```
+
+---
+
+## New Visuals
+
+- Bar chart of feature importances from Random Forest
+- Confusion matrix heatmaps for each classifier
+- F1-score, Precision, Recall, Accuracy bar plots across models
+
+---
+
+
+
+## Next Steps
+- Extend the model to include external social/demographic variables  
+- Deploy as a simple Streamlit dashboard or Tableau integration for real-time prediction  
 - Add clustering for risk segmentation (low/medium/high)
 - Build and evaluate machine learning models
 
