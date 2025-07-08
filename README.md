@@ -128,12 +128,18 @@ It also segments individuals into cost groups to help insurers optimize premium 
 
 - **Risk Category Distribution** (based on 5-number summary bins):
   ```
-  Very Low      (~1122–4740):    ███████████████████████
-  Low           (~4740–9382):    █████████████████
-  Medium        (~9382–16640):   ████
-  High          (>16640):        ████
+  Very Low      (~1122–4740)
+  Low           (~4740–9382)
+  Medium        (~9382–1664)
+  High          (>16640)
   ```
-
+- **RRefined Risk Category Distribution** (based on clusters in the histogram of charges):
+  ```
+  Very Low      (0-10K)
+  Low           (10-30K)
+  Medium        (30-40 K)
+  High          (>40 K) 
+  ```
 ---
 
 ## New Visuals
