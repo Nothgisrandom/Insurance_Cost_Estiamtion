@@ -140,7 +140,8 @@ It also segments individuals into cost groups to help insurers optimize premium 
 
 - Classification Metric Comparison Chart
 ![Charges Distribution](https://github.com/Nothgisrandom/Insurance_Cost_Estiamtion/blob/main/classification%20metric%20comparison.png)
-Bar chart of feature importances from Random Forest
+- Bar chart of feature importances from Random Forest
+-![Charges Distribution] (Feature Importance from Random Forest.png)
 
 - Confusion matrix heatmaps for each classifier
 - F1-score, Precision, Recall, Accuracy bar plots across models
