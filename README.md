@@ -104,6 +104,7 @@ It also segments individuals into cost groups to help insurers optimize premium 
 - **Regression Modeling**: Multiple Linear Regression and Random Forest Regressor  
 - **Risk Group Segmentation**: Charges were categorized into bins using the 5-number summary:
   - Very Low (≤ $4,740), Low ($4,740–$9,382), Medium ($9,382–$16,640), High (>$16,640)
+  - The categorization was updated basewd on the visible clusters in the histogram.
 - **Classification Models**: SVM, Random Forest, and Dummy Classifier were trained to predict `charge_category`  
 - **Class Imbalance Handling**: Applied SMOTE (Synthetic Minority Oversampling Technique) to improve model fairness  
 - **Model Evaluation**: Confusion matrices, macro-averaged classification reports, and performance bar plots for F1, precision, recall, and accuracy  
@@ -138,7 +139,7 @@ It also segments individuals into cost groups to help insurers optimize premium 
 ## New Visuals
 
 - Bar chart of feature importances from Random Forest
-  https://github.com/Nothgisrandom/Insurance_Cost_Estiamtion/blob/main/classification%20metric%20comparison.png
+![Charges Distribution](https://github.com/Nothgisrandom/Insurance_Cost_Estiamtion/blob/main/classification%20metric%20comparison.png)
 - Confusion matrix heatmaps for each classifier
 - F1-score, Precision, Recall, Accuracy bar plots across models
 
