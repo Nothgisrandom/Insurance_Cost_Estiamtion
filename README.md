@@ -1,6 +1,6 @@
 #  Insurance Cost Prediction & Risk Segmentation
 
-This project explores how personal attributes such as **age**, **BMI**, **smoking habits**, and **geographic region** affect medical costs. 
+This project examines how personal attributes, including **age**, **BMI**, **smoking habits**, and **geographic region**, influence medical costs. 
 It also segments individuals into cost groups to help insurers optimize premium pricing.
 
 ---
@@ -109,8 +109,6 @@ It also segments individuals into cost groups to help insurers optimize premium 
 - **Model Evaluation**: Confusion matrices, macro-averaged classification reports, and performance bar plots for F1, precision, recall, and accuracy  
 - **Model Interpretability**:
   - Feature importance via Random Forest
-  - SHAP value recommendations (to be run locally)
-  - Partial dependence plot support for deeper insight (optional)
 
 ---
 
@@ -146,12 +144,9 @@ It also segments individuals into cost groups to help insurers optimize premium 
 ---
 
 
-
 ## Next Steps
 - Extend the model to include external social/demographic variables  
-- Deploy as a simple Streamlit dashboard or Tableau integration for real-time prediction  
-- Add clustering for risk segmentation (low/medium/high)
-- Build and evaluate machine learning models
+- Deploy as a simple Streamlit dashboard or Tableau integration for real-time prediction 
 
 
 ---
